@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header__topbar">
+                <div class="logo__wrapper">
+                    <img class="logo" src="./assets/images/logo.png" alt="">
+                </div>
+
+            </div>
+            <nav class="nav__wrapper">
+                <ul class="nav">
+                    <li class="nav__item"><a href="#login" onclick="myContentController.setContent('login'); return false;">Logowanie</a></li>
+                    <li class="nav__item"><a href="#register" onclick="myContentController.setContent('register'); return false;">Rejstracja</a></li>
+                    <!-- <li class="nav__item"><a href=""></a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content" id="loginContent">
+            <h1>Logowanie</h1>
+            <form>
+                <input type="text" id="login">
+                <input type="password" id="password">
+
+                <button>Login</button>
+            </form>
+        </section>
+
+        <section class="content" id="registerContent">
+            <h1>Rejstracja</h1>
+            <form>
+                <input type="text" id="login">
+                <input type="password" id="password">
+                <input type="password" id="password2">
+
+                <button>Register</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="./assets/js/controller/section.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
