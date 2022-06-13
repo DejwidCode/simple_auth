@@ -75,3 +75,5 @@ window.addEventListener("load", ()=>{
     }
 
 })
+
+console.log('d');
